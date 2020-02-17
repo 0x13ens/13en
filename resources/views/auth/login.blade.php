@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Client Login - Ben Middleton.</title>
+    <title>Client Login - Ben Middleton</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Ben Middleton - Computer Scientist" />
     <meta name="keywords" content="Website Design, Application Design, Software Design, Plymouth" />
