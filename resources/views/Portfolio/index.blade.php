@@ -47,7 +47,7 @@
                 @foreach ($works as $work)
                 <div class="col-lg-3 col-md-6 spacing designing">
                     <div class="work-container position-relative d-block overflow-hidden rounded mt-3">
-                        <a href="{{ route('portfolio.show', $work->slug) }}" class="mfp-image d-inline-block" title="">
+                        <a href="//google.com" class="mfp-image d-inline-block" title="">
                             <img src="images/work/13.jpg" class="img-fluid rounded" alt="work-image">
                         </a>
                         <div class="content personal-port">
