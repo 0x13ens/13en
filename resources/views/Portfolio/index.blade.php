@@ -44,13 +44,14 @@
 
         <div class="container-fluid">
             <div class="row container-grid">
+                @foreach ($works as $work)
                 <div class="col-lg-3 col-md-6 spacing designing">
                     <div class="work-container position-relative d-block overflow-hidden rounded mt-3">
                         <a href="//google.com" class="mfp-image d-inline-block" title="">
                             <img src="images/work/13.jpg" class="img-fluid rounded" alt="work-image">
                         </a>
                         <div class="content personal-port">
-                            <a href="page-work-detail.html" class="title text-white d-block font-weight-bold">whatever</a>
+                            <a href="page-work-detail.html" class="title text-white d-block font-weight-bold">{{ $work->name }}</a>
                         <small class="text-light">Category</small>
                         </div>
                         <div class="client personal-port">
@@ -59,6 +60,7 @@
                         </div>
                     </div>
                 </div><!--end col-->
+                @endforeach
 
                 <div class="col-lg-3 col-md-6 spacing photography">
                     <div class="work-container position-relative d-block overflow-hidden rounded mt-3">
