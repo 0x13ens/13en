@@ -16,6 +16,7 @@ class CreatePortfoliosTable extends Migration
         Schema::create('portfolios', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->String('name');
+            $table->string('slug'); // Field name same as your `saveSlugsTo`
             $table->String('idea');
             $table->longText('body');
             $table->String('featured_image');

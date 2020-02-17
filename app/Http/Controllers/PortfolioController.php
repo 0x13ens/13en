@@ -14,7 +14,8 @@ class PortfolioController extends Controller
      */
     public function index()
     {
-        return view("portfolio.index");
+        $works = Portfolio::orderBy('id', 'desc')->paginate(10);
+        return view("portfolio.index", compact("works"));
     }
 
     /**

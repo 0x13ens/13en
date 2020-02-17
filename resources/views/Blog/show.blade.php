@@ -12,12 +12,12 @@
         <!-- favicon -->
         <link rel="shortcut icon" href="images/favicon.ico">
         <!-- Bootstrap -->
-        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <!-- Icons -->
-        <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+        <link href="/css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
         <!-- Main Css -->
-        <link href="css/style.css" rel="stylesheet" type="text/css" />
-        <link href="css/colors/default.css" rel="stylesheet">
+        <link href="/css/style.css" rel="stylesheet" type="text/css" />
+        <link href="/css/colors/default.css" rel="stylesheet">
 
     </head>
 
@@ -197,10 +197,10 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-12 text-center">
                         <div class="page-next-level">
-                            <h2> Design your apps in your own way </h2>
+                            <h2> {{ $blog->name }} </h2>
                             <ul class="list-unstyled mt-4">
-                                <li class="list-inline-item h6 user text-muted mr-2"><i class="mdi mdi-account"></i> Calvin Carlo</li>
-                                <li class="list-inline-item h6 date text-muted"><i class="mdi mdi-calendar-check"></i> 13th August, 2019</li>
+                                <li class="list-inline-item h6 user text-muted mr-2"><i class="mdi mdi-account"></i> Ben Middleton</li>
+                                <li class="list-inline-item h6 date text-muted"><i class="mdi mdi-calendar-check"></i> {{ date('M j, Y', strtotime($blog->created_at)) }}</li>
                             </ul>
                             <ul class="page-next d-inline-block bg-white shadow p-2 pl-4 pr-4 rounded mb-0">
                                 <li><a href="index.html" class="text-uppercase font-weight-bold text-dark">Home</a></li>
@@ -611,12 +611,12 @@
         <!-- Back to top -->
 
         <!-- javascript -->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="js/jquery.easing.min.js"></script>
-        <script src="js/scrollspy.min.js"></script>
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/bootstrap.bundle.min.js"></script>
+        <script src="/js/jquery.easing.min.js"></script>
+        <script src="/js/scrollspy.min.js"></script>
 
         <!-- Main Js -->
-        <script src="js/app.js"></script>
+        <script src="/js/app.js"></script>
     </body>
 </html>

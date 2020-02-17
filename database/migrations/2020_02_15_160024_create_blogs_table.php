@@ -15,6 +15,9 @@ class CreateBlogsTable extends Migration
     {
         Schema::create('blogs', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('name');
+            $table->longText('body');
+            $table->string('slug'); // Field name same as your `saveSlugsTo`
             $table->timestamps();
         });
     }
