@@ -43,13 +43,12 @@
         </div><!--end container-->
 
         <div class="container-fluid">
-            <div class="row container-grid projects-wrapper">
+            <div class="row container-grid">
                 @foreach ($works as $work)
                 <div class="col-lg-3 col-md-6 spacing designing">
                     <div class="work-container position-relative d-block overflow-hidden rounded mt-3">
-                        <a class="mfp-image d-inline-block" href="images/work/13.jpg" title="">
+                        <a href="{{ route('portfolio.show', $work->slug) }}" class="mfp-image d-inline-block" title="">
                             <img src="images/work/13.jpg" class="img-fluid rounded" alt="work-image">
-                            <div class="overlay-work"></div>
                         </a>
                         <div class="content personal-port">
                             <a href="page-work-detail.html" class="title text-white d-block font-weight-bold">{{ $work->name }}</a>
