@@ -13,12 +13,12 @@
     <!-- favicon -->
     <link rel="shortcut icon" href="images/favicon.ico">
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <!-- Icons -->
-    <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+    <link href="/css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
     <!-- Main Css -->
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <link href="css/colors/default.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="/css/colors/default.css" rel="stylesheet">
 
 </head>
 
@@ -35,7 +35,7 @@
     <!-- Loader -->
 
     <div class="back-to-home rounded d-none d-sm-block">
-        <a href="index.html" class="text-white rounded d-inline-block text-center"><i class="mdi mdi-home"></i></a>
+        <a href="/" class="text-white rounded d-inline-block text-center"><i class="mdi mdi-home"></i></a>
     </div>
 
     <!-- Hero Start -->
@@ -59,7 +59,7 @@
                                     <div class="form-group position-relative">
                                         <label for="email">{{ __('E-Mail Address') }}<span class="text-danger">*</span></label>
                                         <i class="mdi mdi-account ml-3 icons"></i>
-                                        <input id="email" type="email" class="form-control pl-5 @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" placeholder="John" required autocomplete="email" autofocus>
+                                        <input id="email" type="email" class="form-control pl-5 @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" placeholder="Johndow@gmail.com" required autocomplete="email" autofocus>
 
                                         @error('email')
                                         <span class="invalid-feedback" role="alert">
@@ -75,7 +75,7 @@
                                     <div class="form-group position-relative">
                                         <label for="password">{{ __('Password') }}<span class="text-danger">*</span></label>
                                         <i class="mdi mdi-key ml-3 icons"></i>
-                                        <input id="password" type="password" class="form-control pl-5 @error('password') is-invalid @enderror" name="password" placeholder="Dow" required autocomplete="current-password">
+                                        <input id="password" type="password" class="form-control pl-5 @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
 
                                         @error('password')
                                             <span class="invalid-feedback" role="alert">

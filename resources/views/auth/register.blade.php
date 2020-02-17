@@ -35,7 +35,7 @@
     <!-- Loader -->
 
     <div class="back-to-home rounded d-none d-sm-block">
-        <a href="index.html" class="text-white rounded d-inline-block text-center"><i class="mdi mdi-home"></i></a>
+        <a href="/" class="text-white rounded d-inline-block text-center"><i class="mdi mdi-home"></i></a>
     </div>
 
     <!-- Hero Start -->
@@ -142,12 +142,12 @@
     <!-- Hero End -->
 
     <!-- javascript -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/scrollspy.min.js"></script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/jquery.easing.min.js"></script>
+    <script src="/js/scrollspy.min.js"></script>
 
     <!-- Main Js -->
-    <script src="js/app.js"></script>
+    <script src="/js/app.js"></script>
 </body>
 </html>
