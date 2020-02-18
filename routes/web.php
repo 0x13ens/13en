@@ -11,11 +11,8 @@
 |
 */
 
-Route::resource("blog", 'BlogController');
+Route::get('blog', 'BlogController@index');
 Route::resource("portfolio", 'PortfolioController');
-
 Route::get('/', 'PageController@home');
-
 Auth::routes();
-
 Route::get('/home', 'HomeController@index')->name('home');
